@@ -22,7 +22,7 @@ class MovieFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentMovieBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -49,7 +49,6 @@ class MovieFragment : Fragment() {
     }
 
     private fun setupRecyclerView(movie: Movie) {
-
         val movieIntent = MovieIntent(
             title = movie.title,
             usia = movie.usia,

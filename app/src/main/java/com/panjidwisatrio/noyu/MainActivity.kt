@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         currentPage(FragmentHome)
 
-        binding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.page_1 -> {
                     currentPage(FragmentHome)
